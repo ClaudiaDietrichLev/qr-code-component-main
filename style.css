@@ -1,0 +1,74 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("fonts/Outfit-Regular.ttf");
+    font-weight: 400;
+  }
+
+@font-face {
+    font-family: "Outfit";
+    src: url("./fonts/Outfit-ExtraBold.ttf");
+    font-weight: 700;
+  }
+ 
+
+:root {
+    --bg-color:hsl(212, 45%, 89%);
+    --text-color:hsl(220, 15%, 55%);
+    --text-acc:hsl(218, 44%, 22%);
+    --bg-card: hsl(0, 0%, 100%);
+}
+
+html {
+    font-family: "Outfit";
+    font-weight: 400;
+    font-size: 15px;
+    background-color: var(--bg-color);
+    color: var(--text-color);  
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+article {
+    display: flex;
+
+}
+
+section {
+    background-color: var(--bg-card);
+    border-radius: 15px;
+    margin: 2rem;
+    text-align: center;
+    width: 320px;
+    box-shadow:1px 1px 10px hsl(220, 15%, 55%)
+}
+
+.qr-code {
+    width: 280px;
+    border-radius:10px;
+    margin: 1rem;
+}
+
+h1 {
+    font-weight: 700;
+    color:var(--text-acc);
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: 1rem 1.7rem;
+}
+.attribution {
+    text-align:center;
+}
